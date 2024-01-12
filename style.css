@@ -1,7 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Genos:wght@200&display=swap');
 
+/* 
+bg-#162836
+text-#CF7650
+btn-#D5A187
+*/
+
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Genos",sans-serif;
+}
+body{
     background-color: #162836;
+}
+
+li,a,button{
+    text-decoration: none;
+    color: #D5A187;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.logo{
+    width: 20ch;
+}
+
+nav
+{
+    display: flex;
+    display: inline-block;
+}
+
+.nav_links li{
+    display: inline-block;
+    justify-content: space-between;
+}
+
+.main-btn {
+    margin: .1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color:#D5A187;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: .2px solid #D5A187;
+    border-radius: 3.175rem;
+    padding: .350rem 1rem;
+    line-height: 1.75rem;
+    display: inline-block;
+    transition: all 0.1s ease-out 0s;
+}
+
+.main-btn:hover {
+    box-shadow: 1px 1px 15px #CF7650;
+    border-color: #CF7650;
+    color: #CF7650;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.nav_links a:hover {
+    text-shadow: 1px 1px 15px #CF7650;
+    color: #CF7650;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 5%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar a{
+    margin-left: 2.5rem ;
 }
