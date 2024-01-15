@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Genos:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Engagement&display=swap');
 
 /* 
 bg-#162836
@@ -6,82 +8,147 @@ text-#CF7650
 btn-#D5A187
 */
 
-*{
+* {
     padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    font-family: "Genos",sans-serif;
+    font-weight: 600;
 }
-body{
+
+body {
+    margin: 0;
+    font-family: "genos", sans-serif;
     background-color: #162836;
 }
 
-li,a,button{
-    text-decoration: none;
-    color: #D5A187;
-    font-weight: 600;
-    font-size: 16px;
-    text-decoration: none;
-}
-
-.logo{
-    width: 20ch;
-}
-
-nav
-{
+header {
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 15px #162836;
+    overflow: hidden;
     display: flex;
-    display: inline-block;
-}
-
-.nav_links li{
-    display: inline-block;
-    justify-content: space-between;
-}
-
-.main-btn {
-    margin: .1rem;
-    font-size: 1rem;
-    font-weight: 600;
-    color:#D5A187;
-    text-transform: uppercase;
-    background-color: transparent;
-    border: .2px solid #D5A187;
-    border-radius: 3.175rem;
-    padding: .350rem 1rem;
-    line-height: 1.75rem;
-    display: inline-block;
-    transition: all 0.1s ease-out 0s;
-}
-
-.main-btn:hover {
-    box-shadow: 1px 1px 15px #CF7650;
-    border-color: #CF7650;
-    color: #CF7650;
-    transition: all 0.2s ease-in-out 0s;
-}
-
-.nav_links a:hover {
-    text-shadow: 1px 1px 15px #CF7650;
-    color: #CF7650;
-    transition: all 0.2s ease-in-out 0s;
-}
-
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1rem 5%;
-    background-color: rgba(255, 255, 255, 0.1);
-    display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    z-index: 100;
+    padding: 10px;
 }
 
-.navbar a{
-    margin-left: 2.5rem ;
+.logo {
+    display: flex;
+    text-decoration: none;
+    width: 25vh;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    font-family: "Genos", sans-serif;
+}
+
+.navbar a:hover {
+    text-shadow: 0px 0px 10px #D5A187;
+    color: #D5A187;
+}
+
+.navbar a.active {
+    text-shadow: 0px 0px 10px #D5A187;
+    color: #CF7650;
+}
+
+.cart-button {
+    color: #D5A187;
+    background-color: rgba(225, 225, 225, 0.02);
+    border: none;
+    border-radius: 50px;
+    padding: 9px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.cart-button:hover {
+    color: #CF7650;
+    background-color: rgba(225, 225, 225, 0);
+    border: 1px solid #CF7650;
+    box-shadow: 0px 0px 10px #CF7650;
+    border-radius: 50px;
+    padding: 9px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.promo {
+    height: 300px;
+    background-color: #D5A187;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+}
+
+.promohead {
+    padding-top: 20px;
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 60px;
+    position:absolute;
+}
+
+.tagline{
+    font-family: 'Engagement', cursive;
+    font-size: 30px;
+    /* padding-left: 30px; */
+    padding-top: 110px;
+    
+}
+.buynow{
+    padding-top: 10px;
+}
+
+.buybtn {
+    color: #D5A187;
+    background-color:#162836;
+    border: none;
+    border-radius:10px;
+    padding: 9px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.buybtn,a{
+    text-decoration: none;
+    color: #CF7650;
+}
+
+.buybtn:hover {
+    position: fixed;
+    display: flex;
+    color: #CF7650;
+    background-color: #162836;
+    border: 1px solid #CF7650;
+    box-shadow: 0px 0px 10px #CF7650;
+    border-radius:10px;
+    /* padding: 9px 30px; */
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.prodpromo{
+    margin-top: 50px;   
+}
+
+.prodpng{
+    width: 50vh;
+    transition: all 0.3s ease-in-out 0s;
+    transform: scale(1);
+}
+
+.prodpng:hover{
+    transform: scale(1.5);
+    transform: rotate(-0.2turn);
+    transform: perspective(500px) rotateY(-20deg) rotateX(50deg);    
 }
