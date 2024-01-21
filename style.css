@@ -72,7 +72,7 @@ header {
 .cart-button:hover {
     color: #CF7650;
     background-color: rgba(225, 225, 225, 0);
-    border: 1px solid #CF7650;
+    border:1px #CF7650;
     box-shadow: 0px 0px 10px #CF7650;
     border-radius: 50px;
     padding: 9px 30px;
@@ -99,7 +99,6 @@ header {
 .tagline{
     font-family: 'Engagement', cursive;
     font-size: 30px;
-    /* padding-left: 30px; */
     padding-top: 110px;
     
 }
@@ -118,7 +117,7 @@ header {
     transition: all 0.3s ease 0s;
 }
 
-.buybtn,a{
+.buybtn a{
     text-decoration: none;
     color: #CF7650;
 }
@@ -128,10 +127,8 @@ header {
     display: flex;
     color: #CF7650;
     background-color: #162836;
-    border: 1px solid #CF7650;
-    box-shadow: 0px 0px 10px #CF7650;
+    box-shadow: 0px 0px 20px #162836;
     border-radius:10px;
-    /* padding: 9px 30px; */
     font-size: 16px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
@@ -147,8 +144,67 @@ header {
     transform: scale(1);
 }
 
+#viemmore{
+}
 .prodpng:hover{
-    transform: scale(1.5);
-    transform: rotate(-0.2turn);
-    transform: perspective(500px) rotateY(-20deg) rotateX(50deg);    
+    transform: perspective(500px) rotateY(-20deg) rotateX(10deg) scale(1.2);    
+}
+
+.StockProd{
+    margin: 50px 30px;
+    background-color: #D5A187;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.stockindi{
+    display:flex;
+    padding: 10px;
+}
+
+.stockindi li{
+    margin-left: 14px;
+}
+
+
+.stockindi li a{
+    color: #162836;
+}
+
+.selected{
+    text-decoration: underline;
+    text-shadow: 0px 0px 5px #CF7650;
+}
+
+.item1{
+    width: auto;
+    padding: 10px;
+    border: 3px solid #162836;
+    margin: 0px 40px 20px 40px;
+}
+
+.itemimg{
+    width: 225px;
+    transform: scale(1);
+    transition: all .25s ease-in-out;
+}
+
+.itemimg:hover{
+    transform: scale(1.2);
+}
+
+.prodroll{
+    display: flex;
+    margin: 0px 50px;
+    justify-content: center;
+}
+
+.itemname{
+    margin-top: -35px;
+    text-align: center;
+}
+
+.imgtitle{
+    width: auto;
+    border: 3px solid #162836;
 }
