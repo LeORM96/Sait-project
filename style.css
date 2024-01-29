@@ -144,8 +144,6 @@ header {
     transform: scale(1);
 }
 
-#viemmore{
-}
 .prodpng:hover{
     transform: perspective(500px) rotateY(-20deg) rotateX(10deg) scale(1.2);    
 }
@@ -159,7 +157,7 @@ header {
 
 .stockindi{
     display:flex;
-    padding: 10px;
+    padding: 15px;
 }
 
 .stockindi li{
@@ -208,3 +206,25 @@ header {
     width: auto;
     border: 3px solid #162836;
 }
+
+.learnmore{
+    display: flex;
+    justify-content: center;
+}
+.learmoreslogan{
+    background-color: #CF7650;
+    padding-top: 20px;
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 60px;
+}
+
+.learmoreslogan h4{
+    font-family: 'Engagement', cursive;
+    font-size: 30px;
+}
+
+
+width: auto;
+padding: 10px;
+border: 3px solid #162836;
+margin: 0px 40px 20px 40px;
