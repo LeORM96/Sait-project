@@ -5,7 +5,7 @@
 /* 
 bg-#162836
 text-#CF7650
-btn-#D5A187
+btn-    
 */
 
 * {
@@ -36,7 +36,7 @@ header {
 .logo {
     display: flex;
     text-decoration: none;
-    width: 25vh;
+    width: 30vh;
 }
 
 .navbar a {
@@ -208,7 +208,7 @@ header {
 }
 
 .learnmore{
-    display: flex;
+    /* display: flex; */
     justify-content: center;
 }
 .learmoreslogan{
@@ -216,15 +216,131 @@ header {
     padding-top: 20px;
     font-family: 'Gemunu Libre', sans-serif;
     font-size: 60px;
+    padding-left: 50px;
 }
 
-.learmoreslogan h4{
+.learmoreslogan>h4{
     font-family: 'Engagement', cursive;
     font-size: 30px;
 }
 
+.info{
+    display: flex;
+    justify-content:space-evenly;
+    margin: 40px;
+}
 
-width: auto;
-padding: 10px;
-border: 3px solid #162836;
-margin: 0px 40px 20px 40px;
+.info1{
+    width: auto;
+    padding: 10px;
+    border: 3px solid #162836;
+    margin: 0px 40px 20px 40px;
+    background-color: #162836;
+    color: aliceblue;
+}
+
+.info p{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.info h1{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.knowmorebtn{
+    padding: 10px;
+    background-color: #162836;
+    border: 2px solid #CF7650;
+    border-radius: 15px;
+    color: aliceblue;
+    width: 40vh;
+    transition: all 0.3s ease 0s;
+    margin:10px;
+}
+
+
+.knowmorebtn:hover{
+    padding: 10px;
+    background-color: #162836;
+    border: 2px solid #CF7650;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px #3498db;
+    color: aliceblue;
+    width: 40vh;
+    transition: all 0.3s ease 0s;
+}
+/* Footer CSS */
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px solid #CF7650;
+    margin-top: 50px;
+}
+
+.footerlogo{
+    width: 50vh;
+}
+
+.webinfo{
+    width: 50vh;
+    text-align: center;
+}
+
+.column ul li{
+    padding: 15px;
+}
+
+.column a {
+    text-decoration: none;
+    color: #ecf0f1;
+    transition: color 0.3s ease;
+}
+
+.column a:hover {
+    color: #3498db;
+}
+
+.feedback {
+    text-align: right;
+}
+
+.feedback h1{
+    font-size: 45px;
+    font-family: "Gemunu",sans-serif;
+    font-weight: 200;
+}
+
+.feedback p{
+    font-size: 30px;
+    font-family: "Engagement",serif;
+    font-weight: 100;
+}
+.feedback input[type="email"] {
+    padding: 8px;
+    width: 55vh;
+    border: none;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.feedback button {
+    padding: 8px 15px;
+    background-color: #3498db;
+    color: #ecf0f1;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.feedback button:hover {
+    background-color: #2980b9;
+}
