@@ -237,6 +237,22 @@ header {
     margin: 0px 40px 20px 40px;
     background-color: #162836;
     color: aliceblue;
+    transform: scale(1);
+    transition: all 0.2s ease-in 0.1s;
+    border-radius: 15px;
+}
+
+.info1:hover{
+    width: auto;
+    padding: 10px;
+    border: 3px solid #162836;
+    margin: 0px 40px 20px 40px;
+    background-color: #162836;
+    color: aliceblue;
+    box-shadow: 5px 5px 20px #3498db;
+    transform: scale(1.1);
+    transition: all 0.2s ease-in 0.1s;
+    border-radius: 15px;
 }
 
 .info p{
@@ -461,3 +477,5 @@ label{
     transition: all 0.3s ease 0s;
     margin: 20px;
 }
+
+git remote set-url origin https://github.com/LeORM96/Sait-project.git
